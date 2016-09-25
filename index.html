@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="favicon.ico">  
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Plugins CSS -->    
@@ -73,7 +74,7 @@
         <div class="container text-center">
             <p class="intro">We believe any child can learn to code</p>
             <div class="btns">
-                <a class="btn btn-cta-secondary" href="" target="_blank">SHARE</a>
+                <a class="btn btn-cta-secondary" href="#myModal" role="button" data-toggle="modal">SHARE</a>
             </div>
             <ul class="meta list-inline">
                 <li>copyright</li>
@@ -87,19 +88,43 @@
             </div>
         </div>
     </section><!--//promo-->
-    
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">We'd Love to Hear From You</h3>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal col-sm-12" action="https://formspree.io/wakeupoj@gmail.com" method="POST">
+              <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+              <div class="form-group"><label>Message</label><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+              <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+              <div class="form-group"><label>Phone</label><input class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text"></div>
+              <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- ******TEAM****** --> 
     <section id="team" class="docs section">
+
         <div class="container">
             <div class="docs-inner">
-            <h2 class="title text-center">Team</h2>            
-            <div class="block">
-                <h3 class="sub-title text-center">Laura</h3>
-                <p>vid here</p>
-                <h3 class="sub-title text-center">Johann</h3>
-                <p>vid here</p>
-                <h3 class="sub-title text-center">Oswald</h3>
-                <p>vid here</p>
+            <h2 class="title text-center">Team</h2> 
+
+            <div class="block embed-responsive embed-responsive-16by9"> 
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pb1HudSOyKs?rel=0" frameborder="0" allowfullscreen></iframe> 
+            </div><!--//block-->
+
+            <div class="block embed-responsive embed-responsive-16by9"> 
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qoWLKRiafZU?rel=0" frameborder="0" allowfullscreen></iframe> 
             </div><!--//block-->
             </div><!--//docs-inner-->         
         </div><!--//container-->

@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Free Bootstrap Theme for Developers</title>
+    <title>Code is Writing</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,6 +26,17 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: 74px 10px 10px;
+    }
+    #myModalLabel {
+        margin: 0;
+    }
+    </style>
 </head> 
 
 <body data-spy="scroll">
@@ -45,7 +56,7 @@
         <div class="container">            
             <h1 class="logo pull-left">
                 <a class="scrollto" href="#promo">
-                    <span class="logo-title">go research</span>
+                    <span class="logo-title">learn</span>
                 </a>
             </h1><!--//logo-->              
             <nav id="main-nav" class="main-nav navbar-right" role="navigation">
@@ -62,7 +73,7 @@
                         <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
                         <li class="nav-item"><a class="scrollto" href="#team">Team</a></li>
                         <li class="nav-item"><a class="scrollto" href="#docs">Volunteering</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#license">Research</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#research">Research</a></li>
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
             </nav><!--//main-nav-->
@@ -72,7 +83,7 @@
     <!-- ******PROMO****** -->
     <section id="promo" class="promo section offset-header">
         <div class="container text-center">
-            <p class="intro">We believe any child can learn to code</p>
+            <p class="intro">We believe any child can learn to code.</p>
             <div class="btns">
                 <a class="btn btn-cta-secondary" href="#myModal" role="button" data-toggle="modal">SHARE</a>
             </div>
@@ -94,15 +105,26 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h3 id="myModalLabel">We'd Love to Hear From You</h3>
+            <h3 id="myModalLabel">Share</h3>
           </div>
           <div class="modal-body">
             <form class="form-horizontal col-sm-12" action="https://formspree.io/wakeupoj@gmail.com" method="POST">
+              <div class="form-group"><label>Your Idea</label><textarea name="message" class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
               <div class="form-group"><label>Name</label><input name="name" class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
-              <div class="form-group"><label>Message</label><textarea name="message" class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
               <div class="form-group"><label>E-Mail</label><input name="email" class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
-              <div class="form-group"><label>Phone</label><input name="phone" class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text"></div>
-              <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+<!--               <div class="form-group"><label>Phone</label><input name="phone" class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text"></div> -->
+              <div class="form-group"><label>Does this concern?</label>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="speaking_event">Speaking Event</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="volunteering">Volunteering</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="research">Research</label>
+                </div>
+              </div>
+              <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
             </form>
           </div>
           <div class="modal-footer">
@@ -145,17 +167,15 @@
         </div><!--//container-->
     </section><!--//features-->
     
-    <!-- ******LICENSE****** --> 
-    <section id="license" class="license section">
+    <section id="research" class="docs section">
         <div class="container">
-            <div class="license-inner">
+            <div class="docs-inner">
             <h2 class="title text-center">Research</h2>
-                <div class="info">
+                <div class="block">
                     <p>Our research team is a mix of academics and industry professionals.  We are gathered under the common goal of exploring the best tools and methods available to teach kids code.</p>
                     <p>For a list of great tools you can use please share your contact info or visit <a href="http://www.code.org" target="_blank">code.org</a></p>
-                </div><!--//info-->
-                
-            </div><!--//license-inner-->
+                </div><!--//block-->
+            </div><!--//docs-inner-->
         </div><!--//container-->
     </section><!--//how-->
       

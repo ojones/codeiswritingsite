@@ -43,6 +43,9 @@
     .just-one {
         display: none;
     }
+    .modal-footer {
+        border-top: 0;
+    }
     </style>
 </head> 
 
@@ -150,6 +153,10 @@
             <h2 class="title text-center">Team</h2> 
 
             <div class="block embed-responsive embed-responsive-16by9"> 
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/agAJOQ5FKpU?rel=0" frameborder="0" allowfullscreen></iframe> 
+            </div><!--//block-->
+
+            <div class="block embed-responsive embed-responsive-16by9"> 
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pb1HudSOyKs?rel=0" frameborder="0" allowfullscreen></iframe> 
             </div><!--//block-->
 
@@ -207,7 +214,8 @@
         var $quote = $('#quote')
         quotes = [
             '"I\'m hoping we can get motivated enough to catch up with, say, Estonia."<br />~ Douglas Rushkoff, Author',
-            '"It teaches you how to think."<br />~ Steve Jobs'
+            '"It teaches you how to think."<br />~ Steve Jobs',
+            '"Computer science isn\'t an optional skill, it\'s a basic skill."<br />~ President Obama'
             ]
         var rand = quotes[Math.floor(Math.random() * quotes.length)];
         $quote.html(rand)

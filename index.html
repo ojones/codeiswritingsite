@@ -36,6 +36,13 @@
     #myModalLabel {
         margin: 0;
     }
+    .docs {
+        padding: 40px 0;
+        background: #f5f5f5;
+    }
+    .just-one {
+        display: none;
+    }
     </style>
 </head> 
 
@@ -72,7 +79,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
                         <li class="nav-item"><a class="scrollto" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#docs">Volunteering</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#docs">Volunteer</a></li>
                         <li class="nav-item"><a class="scrollto" href="#research">Research</a></li>
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
@@ -88,13 +95,14 @@
                 <a class="btn btn-cta-secondary" href="#myModal" role="button" data-toggle="modal">SHARE</a>
             </div>
             <ul class="meta list-inline">
-                <li>copyright</li>
+                <li id="quote">
+                </li>
             </ul><!--//meta-->
         </div><!--//container-->
         <div class="social-media">
             <div class="social-media-inner container text-center">
                 <ul class="list-inline">
-                    <li>social media</li>
+                    <li>© 2016. All rights reserved.</li>
                 </ul>
             </div>
         </div>
@@ -156,12 +164,12 @@
     <section id="docs" class="docs section">
         <div class="container">
             <div class="docs-inner">
-            <h2 class="title text-center">Volunteering</h2>            
+            <h2 class="title text-center">Volunteer</h2>            
             <div class="block">
                 <!-- <h3 class="sub-title text-center">HTML</h3> -->
-                <p>Our members also volunteer to teach kids code.</p>
-                <p>While learning research is our primary competence, volunteering is how we stat envolved with our local communities.</p>
-                <p>For resources on how you can volunteer, share your contact info or visit <a href="http://www.code.org" target="_blank">code.org</a></p>
+                <p>We currently volunteer with several orginizations to teach kids code.</p>
+                <p>While learning research is our primary competence, volunteering is how we stay involved with our local communities.</p>
+                <p>For ideas on how you too can participate, share your contact info or visit <a href="http://www.code.org" target="_blank">code.org</a></p>
             </div><!--//block-->
             </div><!--//docs-inner-->         
         </div><!--//container-->
@@ -172,7 +180,8 @@
             <div class="docs-inner">
             <h2 class="title text-center">Research</h2>
                 <div class="block">
-                    <p>Our research team is a mix of academics and industry professionals.  We are gathered under the common goal of exploring the best tools and methods available to teach kids code.</p>
+                    <p>We are a mix of academics and industry professionals.</p>  
+                    <p>We work together under the common goal of exploring the best tools and methods available to teach kids code.</p>
                     <p>For a list of great tools you can use please share your contact info or visit <a href="http://www.code.org" target="_blank">code.org</a></p>
                 </div><!--//block-->
             </div><!--//docs-inner-->
@@ -193,7 +202,16 @@
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
     <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
     <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
-    <script type="text/javascript" src="assets/js/main.js"></script>       
+    <script type="text/javascript" src="assets/js/main.js"></script> 
+    <script>
+        var $quote = $('#quote')
+        quotes = [
+            '"I\'m hoping we can get motivated enough to catch up with, say, Estonia."<br />~ Douglas Rushkoff, Author',
+            '"It teaches you how to think."<br />~ Steve Jobs'
+            ]
+        var rand = quotes[Math.floor(Math.random() * quotes.length)];
+        $quote.html(rand)
+    </script>      
 </body>
 </html> 
 
